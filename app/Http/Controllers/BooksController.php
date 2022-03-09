@@ -13,4 +13,9 @@ class BooksController extends Controller
         Book::create($request->validated());
         return response(["message" => "Created"], 201);
     }
+
+    public function create()
+    {
+        return view('books.create');
+    }
 }
