@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\BackingClasses\Char;
+use App\Facades\CharFacade;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +15,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->app->bind(CharFacade::class, function () {
+            return new Char();
+        });
     }
 
     /**

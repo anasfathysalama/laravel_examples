@@ -16,3 +16,7 @@ require __DIR__ . '/auth.php';
 
 Route::post("books", [BooksController::class, 'store'])->middleware('auth');
 Route::get("books/create", [BooksController::class, 'create'])->middleware("can:create,App\Models\Book");
+
+Route::get('facade', function () {
+    return \App\Facades\CharFacade::convertToCamelCase("new_calss_name");
+});
