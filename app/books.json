@@ -1,0 +1,18 @@
+{
+    "books": [
+        {
+            "book_id": 1,
+            "book_title": "title one",
+            "book_description": "description for book",
+            "author_name": "John doe",
+            "ISBN": "ty6-HJ88-E4T5"
+        },
+        {
+            "book_id": 2,
+            "book_title": "title one",
+            "book_description": "description for book",
+            "author_name": "Jack",
+            "ISBN": "tW6-OP99-E4T5"
+        }
+    ]
+}
